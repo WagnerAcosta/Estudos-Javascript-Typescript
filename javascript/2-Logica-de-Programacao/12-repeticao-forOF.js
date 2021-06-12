@@ -8,7 +8,7 @@
 const nomes = ["wagner", "duarte", "acosta"];
 
 for (let i of nomes) {
-  console.log(i);
+  console.log(`Array: ${i} ${nomes[i]}`);
 }
 
 //Não funciona com Objetos

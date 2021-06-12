@@ -8,7 +8,7 @@ const frutas = ["Pera", "Maça", "Banana", "Laranja"];
 
 //Array
 for (let i in frutas) {
-  console.log(`Índice:${i} Valor:${frutas[i]}`);
+  console.log(`Array: Índice:${i} Valor:${frutas[i]}`);
 }
 
 //Objeto
@@ -19,5 +19,5 @@ const pessoa = {
 };
 
 for (let i in pessoa) {
-  console.log(`Índice: ${i} Valor: ${pessoa[i]}`);
+  console.log(`Objeto: índice: ${i} Valor: ${pessoa[i]}`);
 }
