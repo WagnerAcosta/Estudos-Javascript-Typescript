@@ -5,9 +5,9 @@ function criarPessoa() {
     idade: 25,
   };
 }
-//console.log(criarPessoa());
+console.log(criarPessoa());
 
 function criarProduto(nome, preco) {
   return { nome, preco, desconto: 0.1 };
 }
-//console.log(criarProduto("Tv", 1500));
+console.log(criarProduto("Tv", 1500));
