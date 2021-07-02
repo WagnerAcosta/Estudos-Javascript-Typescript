@@ -1,12 +1,13 @@
-const nome = "wagner";
+const nome = "Nome global";
 
-function falaNome() {
+function funcao1() {
   console.log(nome);
 }
 
-function usaFalaNome() {
-  const nome = "viviane"; //Não altera o valor da funcão falaNome
-  falaNome();
+function funcao2() {
+  const nome = "Nome funcao 2"; //Não altera o valor da funcão falaNome
+  funcao1();
 }
 
-usaFalaNome();
+funcao1();
+funcao2();

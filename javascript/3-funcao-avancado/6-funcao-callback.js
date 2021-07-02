@@ -1,5 +1,10 @@
-//Callback só executa uma função por vezes na ordem chamada
-function rand(min = 500, max = 2500) {
+/**
+ * callback é um tipo de função que só é executada após o processamento de outra função.
+ * Na linguagem JavaScript, quando uma função é passada como um argumento de outra, ela é,
+ * então, chamada de callback.
+ */
+
+function rand(min = 500, max = 3000) {
   const tempo = Math.random() * (max - min) + min;
   return Math.floor(tempo);
 }
