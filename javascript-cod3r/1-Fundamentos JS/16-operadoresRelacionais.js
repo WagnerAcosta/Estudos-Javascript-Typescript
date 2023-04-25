@@ -9,10 +9,10 @@ Operadores de comparação
 */
 const num1 = 10; // number
 const num2 = 10; // number
-const comp = num1 == num2; //Comparação de valores
-console.log(comp);
+const compara = num1 == num2; //Comparação de valores
+console.log('Numeros: ', compara);
 
 const d1 = new Date(0);
 const d2 = new Date(0);
-console.log(d1 == d2); //Comparação por referência
-console.log(d1.getTime() == d2.getTime()); //Comparação de valores
+console.log('Dia: ', d1 == d2); //Comparação por referência
+console.log('Time: ', d1.getTime() == d2.getTime()); //Comparação de valores

@@ -1,4 +1,7 @@
-//Operadores unarios
+/**
+ * Operadores unários são operadores aritméticos que desempenham uma ação em um único operando. 
+ */
+
 let contador = 1;
 contador++; //2
 ++contador; //3

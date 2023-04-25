@@ -1,3 +1,5 @@
+/**String: é uma sequência ordenada de caracteres (símbolos) escolhidos a partir de um conjunto pré-determinado.*/
+
 const nome = "wagner";
 
 console.log(nome.charAt(4));

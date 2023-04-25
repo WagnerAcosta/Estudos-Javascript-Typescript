@@ -1,3 +1,5 @@
+/**Um objeto é uma entidade independente, com propriedades e tipos. */
+
 const cadastro = {
   //Atributos
   nome: "Wagner",

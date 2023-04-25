@@ -1,3 +1,5 @@
+/**um conjunto de instruções que executa uma tarefa ou calcula um valor. */
+
 //Função sem retorno
 function imprimirSoma(a, b) {
   console.log(a + b);

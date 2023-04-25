@@ -1,3 +1,8 @@
+/**
+ * Object destructuring ou atribuição via desestruturação:
+ *   possibilita extrair dados de arrays ou objetos em variáveis distintas
+ */
+
 //Desestruturação de Objetos
 const pessoa = {
   nome: "wagner",
@@ -9,26 +14,26 @@ const pessoa = {
   },
 };
 const { nome, idade } = pessoa;
-const {
-  endereco: { rua, numero },
-} = pessoa;
+const { endereco: { rua, numero, bairro: b } } = pessoa;
+console.log("Exemplo Objeto: " + nome, idade, rua, numero, b);
 
-console.log("Exemplo Objeto: " + nome, idade, rua, numero);
 
 //Desestruturação em Arrays
 const [n1, , n3, , n5] = [1, 3, 4];
-console.log("Exemplo Array: " + n1, n3);
+console.log("\nExemplo Array: " + n1, n3);
+
 
 //Desestruturação de função
 function randObject({ min = 0, max = 100 }) {
   const valor = Math.random() * (max - min) + min;
   return Math.floor(valor);
 }
-console.log("Exemplo Obejto: " + randObject({}));
+console.log("\nExemplo Objeto: " + randObject({}));
+
 
 function randArray([min = 0, max = 100]) {
   if (min > max) [min, max] = [max, min];
   const valor = Math.random() * (max - min) + min;
   return Math.floor(valor);
 }
-console.log("Exemplo Array: ", randArray([]));
+console.log("\nExemplo Array: ", randArray([]));

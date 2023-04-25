@@ -1,9 +1,12 @@
-/*
-Operadores Lógicos
-&& -> AND -> E -> Todas as expressões precisam ser verdadeiras para retornar true
-|| -> OR -> OU
-! -> NOT -> NÃO
-*/
+/**
+ * São usados para realizar operações lógicas. Elas podem ser do tipo AND, OR e NOT. 
+    Os operandos devem ser lógicos, verdadeiro ou falso.  
+ 
+ * &&: AND -> E -> Todas as expressões precisam ser verdadeiras para retornar true
+ * ||: OR -> OU
+ * ! : NOT -> NÃO
+ */
+
 // const expressaoAnd = true && true && true && true;
 // const expressaoOr = false || false || false || false;
 
@@ -22,7 +25,7 @@ function compras(trabalho1, trabalho2) {
   const manterSaudavel = !comprarSorvete;
   return { comprarSorvete, comprarTv50, comprarTv32, manterSaudavel };
 }
-console.log(compras(true, true));
-console.log(compras(true, false));
-console.log(compras(false, true));
-console.log(compras(false, false));
+console.log('compras 1: ', compras(true, true));
+console.log('compras 2: ', compras(true, false));
+console.log('compras 3: ', compras(false, true));
+console.log('compras 4: ', compras(false, false));

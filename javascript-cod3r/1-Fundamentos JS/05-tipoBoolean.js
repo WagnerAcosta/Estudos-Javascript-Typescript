@@ -1,3 +1,5 @@
+/**Boolena: é um tipo de dado lógico que pode ter apenas um de dois valores possíveis: verdadeiro ou falso */
+
 const aprovado = true; //Boolean = true || false (lógico)
 let idade = 25;
 

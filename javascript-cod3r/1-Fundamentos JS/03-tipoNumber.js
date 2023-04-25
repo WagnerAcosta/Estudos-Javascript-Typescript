@@ -1,3 +1,5 @@
+/**Number é um objeto encapsulado que permite você trabalhar com valores numéricos.*/
+
 //Tipos de dados
 const idade = 25;
 console.log(typeof idade);
