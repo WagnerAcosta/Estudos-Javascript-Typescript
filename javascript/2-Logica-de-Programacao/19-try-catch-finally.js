@@ -17,9 +17,9 @@ function retornaHora(data) {
 
 try {
   const hora = retornaHora();
-  console.log(hora);
+  console.log('horas: ' + hora);
 } catch (error) {
-  console.log(error);
+  console.log('error:', error.message);
 } finally {
-  console.log("Sempre vou ser executado!");
+  console.log("finally: sempre vou ser executado!");
 }

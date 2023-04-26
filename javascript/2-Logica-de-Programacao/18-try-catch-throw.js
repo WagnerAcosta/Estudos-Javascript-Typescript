@@ -6,9 +6,9 @@ function soma(x, y) {
 }
 
 try {
-  console.log(soma(1, 2));
-  console.log(soma("1", 2));
+  console.log('soma: ', soma(1, 2));
+  console.log('soma: ', soma("1", 2));
 } catch (error) {
-  // console.log(error);
+  console.log('\nerror: ', error.message);
   console.log("Alguma coisa amigável para o usuario.");
 }
