@@ -1,31 +1,43 @@
-//declaração de função literal
+/**Function declaration ou função de declaração*/
 falaOi(); //hosting são elevadas para o topo
 function falaOi() {
-  console.log("Função literal");
+  console.log("Function declaration");
 }
 
+
 //First-class objects (Objetos de primeira classe) pode ser tratada como dados
-//Function expression
+//Function expression ou função de expressão
 const souUmDado = function () {
-  console.log("Função como dados");
+  console.log("Function expression");
 };
-//Função como parametro
+
+
+//Arrow function ES16 ou função de flecha
+const funcaoArrow = () => {
+  console.log("Arrow function");
+};
+funcaoArrow();
+
+
+/**Função contrutora */
+function Pessoa(nome) {
+  this.nome = nome
+}
+const p1 = new Pessoa('Functions constructor')
+console.log(p1)
+
+
+
+//Função callback
 function executa(funcao) {
   funcao();
 }
 executa(souUmDado);
 
-//Arrow function ES16
-const funcaoArrow = () => {
-  console.log("Sou uma arrow function");
-};
-funcaoArrow();
 
 //Função dentro de um objeto
 const objeto = {
   //Método
-  falar() {
-    console.log("Sou um metodo de um objeto");
-  },
+  falar() { console.log("Sou um metodo de um objeto") },
 };
 objeto.falar();

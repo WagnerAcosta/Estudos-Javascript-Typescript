@@ -1,5 +1,9 @@
-//Factory function (Função fábrica)
-//Constructor function (Função construtora)
+/** Factory function (Função fábrica) é um gerador de objetos.
+ 
+ *  Em JavaScript, qualquer função pode retornar um objeto. 
+    Mas, quando isso acontece sem o new, é uma função de fábrica. 
+ */
+
 function criaPessoa(nome, sobrenome, altura, peso) {
   return {
     nome,
@@ -34,3 +38,5 @@ console.log(p1.imc());
 
 p1.nomeCompleto = "Maria Eduarda Duarte";
 console.log(p1.nomeCompleto); //Finge não ser uma função
+
+console.log(p1)

@@ -9,11 +9,13 @@ function soma1() {
 }
 soma1(1, 2, 3, 4, "wagner");
 
+
 //Caso não passe o valor será undefined
 function soma2(a, b, c) {
   console.log("function soma2:", a, b, c);
 }
 soma2(12);
+
 
 //Valores padrão no parametro
 function soma3(a = 0, b = 1, c = 0) {
@@ -21,6 +23,7 @@ function soma3(a = 0, b = 1, c = 0) {
 }
 soma3(2);
 soma3(2, undefined, 20);
+
 
 function conta(operador, acumulador, ...numeros) {
   operador === "*" ? (acumulador = 1) : (acumulador = 0);

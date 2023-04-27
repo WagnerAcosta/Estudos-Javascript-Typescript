@@ -3,10 +3,12 @@ function soma(a, b) {
 }
 soma(10, 20);
 
+
 function soma2(a, b) {
   console.log(a + b); //Só exibi o valor
 }
 soma2(2, 7);
+
 
 //Funcão para criar objeto.
 function criarObjeto(nome, sobrenome) {
@@ -17,6 +19,7 @@ const p2 = { nome: "Meri", sobrenome: "acosta" }; //fiz manual
 
 console.log(p1);
 console.log(p2);
+
 
 //Função dentro de função
 function criaMultiplicador(multiplicador) {

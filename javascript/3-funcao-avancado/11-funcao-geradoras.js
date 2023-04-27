@@ -1,3 +1,11 @@
+/** Funções geradoras
+  * São funções onde a execução é adiada até o momento que precisamos 
+    de seu retorno. Os contextos ficam salvos a cada reentrada. 
+    Funções geradoras são pilares para uma programação assíncrona 
+    que mitigam os problemas com callbacks.
+ */
+
+
 //-----------Exemplo 1--------------
 function* gerador1() {
   yield "Valor 1";

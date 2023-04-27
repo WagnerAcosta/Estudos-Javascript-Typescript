@@ -1,6 +1,7 @@
-//Função recursiva chama ela mesma
-//Funciona como um loop de função
-//Tem o limite de 1000 vezes
+/**
+ * Uma função recursiva é uma função que chama a si mesma até encontrar uma instrução de parar.
+   Essa técnica é chamada de recursão.
+ */
 
 function recursiva(num) {
   console.log(num);

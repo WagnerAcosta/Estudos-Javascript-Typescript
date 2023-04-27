@@ -1,7 +1,7 @@
 /**
  * Closure é quando uma função é capaz de "lembrar" e
- * acessar seu escopo léxico mesmo quando ela está sendo
- * executada fora de seu escopo léxico.
+     acessar seu escopo léxico mesmo quando ela está sendo
+     executada fora de seu escopo léxico.
  */
 
 //Função Global

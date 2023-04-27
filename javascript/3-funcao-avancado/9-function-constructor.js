@@ -1,7 +1,7 @@
-/**
- * Função construtora => objetos
- * Função fabrica => objetos
- * Construtora => Pessoa (new)
+/** Função construtora.
+ * criando um novo objeto ({}).
+ * definindo o construtor do objeto pessoa como Cadastro.
+ * Sempre inicia uma nova instância
  */
 
 function Cadastro(nome, cpf) {
@@ -19,5 +19,6 @@ function Cadastro(nome, cpf) {
     console.log(`Sou um metodo ${this.nome}`);
   };
 }
-const cd1 = new Cadastro("Wagner", "00.000.000/0001-00");
-cd1.metodo();
+const pessoa = new Cadastro("Wagner", "00.000.000/0001-00");
+pessoa.metodo();
+console.log(pessoa)

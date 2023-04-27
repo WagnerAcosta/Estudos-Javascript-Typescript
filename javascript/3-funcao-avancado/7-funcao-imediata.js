@@ -1,4 +1,8 @@
-//IIFE => Immediately invoked function expression
+/**
+ * IIFE => Immediately invoked function expression
+ * São funções que são automaticamente executadas imediatamente após sua declaração, 
+    sem necessidade de chamadas.
+ */
 
 (function (idade, peso, altura) {
   const sobrenome = "gonçalves";
