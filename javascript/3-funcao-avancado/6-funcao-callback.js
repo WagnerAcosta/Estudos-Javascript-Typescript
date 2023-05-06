@@ -42,11 +42,21 @@ function f3Callback() {
   console.log("Olá mundo");
 }
 
-//Outra forma de criar
-// f1(() => {
-//   f2(() => {
-//     f3(() => {
-//       console.log("Olá mundo");
-//     });
-//   });
-// });
+/**
+ * Callback hell
+
+    f1(() => {
+      f2(() => {
+        f3(() => {
+          console.log("Olá mundo");
+        });
+      });
+    });
+ */
+
+
+
+
+
+
+

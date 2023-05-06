@@ -1,16 +1,17 @@
-/**Escopo é a propriedade que determina onde uma variável pode ser utilizada
-   como um identificador em um programa. Uma variável declarada em uma função 
-   é normalmente local; o contexto define o escopo.
+/**
+    Escopo é a acessibilidade de objetos, variáveis e funções em diferentes partes do código.
  */
 
+//Ele vai busca em todos os escopo a variável.
 const nome = "Nome global";
 
 function funcao1() {
+  const nome = 'Nome função 1'
   console.log(nome);
 }
 
 function funcao2() {
-  const nome = "Nome funcao 2"; //Não altera o valor da funcão falaNome
+  const nome = "Nome funcao 2"; //Não altera o valor da funcão
   funcao1();
 }
 

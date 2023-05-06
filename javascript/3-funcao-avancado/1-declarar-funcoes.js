@@ -12,7 +12,7 @@ const souUmDado = function () {
 };
 
 
-//Arrow function ES16 ou função de flecha
+//Arrow function ES6 ou função de flecha
 const funcaoArrow = () => {
   console.log("Arrow function");
 };
@@ -27,8 +27,7 @@ const p1 = new Pessoa('Functions constructor')
 console.log(p1)
 
 
-
-//Função callback
+/** Callbacks: são funções passadas como argumento */
 function executa(funcao) {
   funcao();
 }

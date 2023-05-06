@@ -1,8 +1,9 @@
-/** Funções geradoras
-  * São funções onde a execução é adiada até o momento que precisamos 
-    de seu retorno. Os contextos ficam salvos a cada reentrada. 
-    Funções geradoras são pilares para uma programação assíncrona 
-    que mitigam os problemas com callbacks.
+/**função geradora é um tipo especial de função que permite definir
+    um algoritmo iterativo escrevendo uma única função que pode ser
+    pausada e retomada quantas vezes forem necessárias.
+  
+  *Cada vez que a palavra-chave yield é encontrada na função geradora, 
+    ela pausa a execução e retorna um valor ao iterador gerador.
  */
 
 
@@ -17,6 +18,7 @@ for (const valor of g1) {
   console.log(valor);
 }
 
+
 //-----------Exemplo 2--------------
 function* gerador2() {
   let i = 0;
@@ -29,6 +31,7 @@ function* gerador2() {
 const g2 = gerador2();
 console.log(g2.next()); //{ value: 0, done: false }
 console.log(g2.next()); //{ value: 1, done: false }
+
 
 //-----------Exemplo 3--------------
 function* gerador3() {
@@ -46,6 +49,7 @@ const g4 = gerador4();
 for (const valor of g4) {
   console.log(valor);
 }
+
 
 //-----------Exemplo 4--------------
 function* gerador5() {
