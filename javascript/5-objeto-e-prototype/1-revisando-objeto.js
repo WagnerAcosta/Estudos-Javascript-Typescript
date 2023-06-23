@@ -1,22 +1,25 @@
 //Construtor literal
-const cadastro1 = {
-  username: "cadastro1",
-  password: "cad1",
-  datCad: 25,
-  falarNome: () => {
-    return `${cadastro1.username} está falando seu nome.`;
+const pessoa1 = {
+  username: "Maria",
+  password: "1234",
+  idade: 25,
+  falarNome: function () {
+    return `${this.username} está falando seu nome.`;
   },
   getDataNascimento: () => {
     const dataAtual = new Date();
-    return dataAtual.getFullYear() - cadastro1.datCad;
+    return dataAtual.getFullYear() - pessoa1.idade;
   },
 };
 // const chave = "username";
 // console.log(cadastro1.username); //cadastro1
 // console.log(cadastro1["password"]); //cad1
 // console.log(cadastro1[chave]); //cadastro1
-console.log(cadastro1.falarNome());
-console.log(cadastro1.getDataNascimento());
+console.log('leteral: ' + pessoa1)
+console.log(pessoa1.falarNome());
+console.log(pessoa1.getDataNascimento() + '\n');
+
+
 
 //Construtor de objeto
 const cadastro2 = new Object();
@@ -25,9 +28,11 @@ cadastro2.password = "cad2";
 
 delete cadastro2.username; //Excluir
 
-console.log(cadastro2);
+console.log('Constructor: ' + cadastro2);
 
-//Factory functions para a construção de objetos
+
+
+//Factory functions
 function criarObjeto(marca, modelo) {
   return {
     marca,
@@ -38,14 +43,17 @@ function criarObjeto(marca, modelo) {
   };
 }
 const obj = criarObjeto("samsung", "j4");
+console.log('Factory: ' + obj)
 console.log(obj.mostrar);
 
-//Construtor functions para a construção de objetos
-//Precisa nome Maiusculo
+
+
+//Construtor functions
 function Objeto(marca, modelo) {
-  (this.marca = marca), (this.modelo = modelo);
+  this.marca = marca
+  this.modelo = modelo
   Object.freeze(this); //congela objeto
 }
 const ojt1 = new Objeto("iphone", "i10");
 delete ojt1.marca; //Não funciona por causa do congelamento
-console.log(ojt1);
+console.log('Functions construtor: ' + ojt1);
