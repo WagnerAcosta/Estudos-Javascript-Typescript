@@ -1,8 +1,15 @@
+/**
+ * readonly é usada para criar propriedades somente leitura em um objeto.
+    ela só pode ser atribuída durante a criação do objeto ou em seu construtor.
+
+ * '?' é usado para indicar que uma propriedade ou parâmetro é opcional. 
+ */
+
 const objetoA: {
-  readonly chaveA: string; //somente leitura
+  readonly chaveA: string;
   chaveB: string;
   chaveC?: string;
-  [key: string]: unknown; //Utilizar quando você precisa criar mais objetos
+  [key: string]: unknown;
 } = {
   chaveA: "Valor A",
   chaveB: "Valor B",
@@ -10,8 +17,6 @@ const objetoA: {
 
 objetoA.chaveB = "Outro valor";
 objetoA.chaveC = "Novo valor";
-objetoA.chaveD = "Nova chave";
-+console.log(objetoA);
+objetoA.novaChave = "Nova chave";
 
-// Module mode
-export default 1;
+console.log(objetoA);

@@ -14,5 +14,8 @@ console.log(addOrConcat(10, "20"));
 console.log(addOrConcat("10", 20));
 console.log(addOrConcat(true, true));
 
-// Module mode
-export default 1;
+//--------- Exemplo 2 ---------
+let multiType: number | boolean;
+multiType = 20;         //* Valid
+multiType = true;       //* Valid
+// multiType = "twenty";   //* Invalid

@@ -1,3 +1,9 @@
+/** Inferência de Tipo seria a capacidade do TypeScript 
+     de inferir ou adivinhar qual tipo aquela variável irá
+     receber conforme o valor que foi atribuído a ela.
+   EX: const nome = 'wagner'  //Não tem necessidade informar o tipo
+ */
+
 // Tipos básicos (aqui ocorre inferência de tipos)
 let nome: string = "Luiz"; // Qualquer tipo de strings: '' "" ``
 let idade: number = 0b1010; // 10, 1.57, -5.55, 0xf00d, 0b1010, 0o7744
@@ -22,6 +28,3 @@ function soma(x: number, y: number): number {
   return x + y;
 }
 const soma2: (x: number, y: number) => number = (x, y) => x + y;
-
-// Module mode
-export default 1;

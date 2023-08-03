@@ -1,4 +1,7 @@
-// Tuple
+/** Tupla é um tipo de dado que permite representar uma sequência fixa 
+     de elementos com tipos diferentes.
+ */
+
 const dadosCliente1: readonly [number, string] = [1, "Luiz"];
 const dadosCliente2: [number, string, string] = [1, "Luiz", "Miranda"];
 const dadosCliente3: [number, string, string?] = [1, "Luiz"];
@@ -18,6 +21,3 @@ const array2: ReadonlyArray<string> = ["Luiz", "Otávio"];
 
 console.log(array1);
 console.log(array2);
-
-// Module mode
-export default 1;

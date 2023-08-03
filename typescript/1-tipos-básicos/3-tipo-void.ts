@@ -1,5 +1,6 @@
 /**
- * Tipo void é utilizado somente para exibir dados
+ * void: É usado para indicar a ausência de um tipo, geralmente usado 
+    como tipo de retorno de uma função que não retorna um valor.
  */
 
 function semRetorno(...args: string[]): void {
